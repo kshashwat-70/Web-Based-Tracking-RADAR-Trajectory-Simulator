@@ -1,63 +1,60 @@
-# 📡 Web-Based Tracking RADAR Trajectory Simulator
+# 🌐 Web-Based Tracking RADAR Trajectory Simulator
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Java](https://img.shields.io/badge/Java-17%2B-orange)](https://www.oracle.com/java/technologies/javase-downloads.html)
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-blue)](#)
-[![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen)](#contributing)
+![Project Banner](https://via.placeholder.com/800x200.png?text=Web-Based+Tracking+RADAR+Trajectory+Simulator)
 
-A powerful, real-time, web-based simulator designed to track RADAR trajectories by converting and visualizing spatial coordinates. Built in Java and enhanced with HTML/JavaScript for dynamic data visualization, this tool allows seamless transformation and transmission of ECEF, ENV, or LLA data for simulation and analysis.
+## 📝 Overview
+
+This project processes data from **ECEF**, **ENV**, or **LLA** coordinate datasets, converting them into **Range**, **Theta**, and **Phi** parameters. It offers real-time simulation of essential RADAR metrics, displaying **Azimuth Angle**, **Elevation Angle**, and **Range** across three distinct graphs. Additionally, it facilitates data transmission to a receiver PC for further analysis.
 
 ---
 
 ## 📚 Table of Contents
 
-- [🚀 Features](#-features)
-- [🏗️ Architecture](#-architecture)
-- [🛠️ Installation](#-installation)
-- [📊 Usage](#-usage)
-  - [📡 Launch the Sender Module](#-launch-the-sender-module)
-  - [📶 Start the Receiver Module](#-start-the-receiver-module)
-  - [📊 Visualize the Data](#-visualize-the-data)
-- [🤝 Contributing](#-contributing)
-- [📜 License](#-license)
-- [🙌 Acknowledgements](#-acknowledgements)
+- [Features](#-features)
+- [Architecture](#-architecture)
+- [Installation](#-installation)
+- [Usage](#-usage)
+  - [Sender Module](#-launch-the-sender-module)
+  - [Receiver Module](#-start-the-receiver-module)
+  - [Data Visualization](#-visualize-the-data)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Acknowledgements](#-acknowledgements)
 
 ---
 
 ## 🚀 Features
 
-✅ **Real-Time Simulation**: View RADAR parameters in real-time with continuous updates.  
-✅ **Flexible Coordinate Support**: Converts Earth-Centered Earth-Fixed (ECEF), East-North-Vertical (ENV), or Latitude-Longitude-Altitude (LLA) coordinates into RADAR-friendly format.  
-✅ **Multi-Axis Visualization**: Simultaneous graphing of Azimuth Angle, Elevation Angle, and Range on an intuitive interface.  
-✅ **High-Performance Networking**: Efficient data transmission from sender to receiver module using Java sockets and multithreading.  
-✅ **Web-Based Display**: Output visualizations rendered via HTML5 and JavaScript.
+✅ **Real-Time Simulation**: Immediate visualization of RADAR parameters.  
+✅ **Data Conversion**: Seamlessly transforms ECEF, ENV, or LLA coordinates to Range, Theta, and Phi.  
+✅ **Graphical Display**: Simultaneous plotting of Azimuth Angle, Elevation Angle, and Range.  
+✅ **Data Transmission**: Efficiently sends processed data to a receiver PC for extended processing.  
 
 ---
 
 ## 🏗️ Architecture
 
-This simulator is divided into two core modules:
+The simulator is structured into two primary modules:
 
-### 📨 Sender Module
+1. **Sender Module**:
+   - **Function**: Reads coordinate data, converts it to RADAR parameters, and transmits the processed data.
+   - **Implementation**: Developed in **Java**, leveraging **multi-threading** for optimal performance.
 
-- **Function**: Reads spatial coordinate data, converts it to RADAR parameters (range, theta, phi), and transmits the results over the network.
-- **Tech Stack**: Java (JDK 17+), multithreading, socket programming.
-
-### 📥 Receiver Module
-
-- **Function**: Listens for incoming data from the sender, processes the stream, and passes the information to a browser-based visualizer.
-- **Tech Stack**: Java for backend + HTML/CSS/JavaScript for frontend visualization.
+2. **Receiver Module**:
+   - **Function**: Receives processed data and visualizes RADAR parameters in real-time.
+   - **Implementation**: Built using **Java**, integrating with **HTML** and **JavaScript** for dynamic data representation.
 
 ---
 
 ## 🛠️ Installation
 
-### 1️⃣ Clone the Repository
+1. **Clone the Repository:**
 
 ```bash
-git clone https://github.com/kshashwat-70/Web-Based-Tracking-RADAR-Trajectory-Simulator.git
-cd Web-Based-Tracking-RADAR-Trajectory-Simulator
- ```
+git clone https://github.com/mitul-goswami/Web---Based-Tracking-RADAR-Trajectory-Simulator.git
+cd Web---Based-Tracking-RADAR-Trajectory-Simulator
+```
+
 2. **Set Up the Development Environment:**
 
 - Ensure [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) is installed.
@@ -139,7 +136,9 @@ git push origin feature/your-feature
 
 ---
 
+## 📜 License
 
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
@@ -153,4 +152,3 @@ For issues or questions, please open an [issue](https://github.com/mitul-goswami
 ---
 
 ⭐ **If you find this project helpful, please consider giving it a star!**
-
